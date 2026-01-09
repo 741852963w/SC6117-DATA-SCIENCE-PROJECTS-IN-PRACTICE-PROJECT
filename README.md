@@ -82,19 +82,12 @@ See the [Documentation](https://docs.gptr.dev/docs/gpt-researcher/getting-starte
 
 1. Install Python 3.11 or later. [Guide](https://www.tutorialsteacher.com/python/install-python).
 2. Clone the project and navigate to the directory:
-
-    ```bash
-    git clone https://github.com/assafelovic/gpt-researcher.git
-    cd gpt-researcher
-    ```
-
 3. Set up API keys by exporting them or storing them in a `.env` file.
 
     ```bash
     export OPENAI_API_KEY={Your OpenAI API Key here}
     export TAVILY_API_KEY={Your Tavily API Key here}
     ```
-
     For custom OpenAI-compatible APIs (e.g., local models, other providers), you can also set:
     
     ```bash
@@ -112,23 +105,7 @@ Visit [http://localhost:8000](http://localhost:8000) to start.
 
 For other setups (e.g., Poetry or virtual environments), check the [Getting Started page](https://docs.gptr.dev/docs/gpt-researcher/getting-started).
 
-## Run as PIP package
-```bash
-pip install gpt-researcher
 
-```
-### Example Usage:
-```python
-...
-from gpt_researcher import GPTResearcher
-
-query = "why is Nvidia stock going up?"
-researcher = GPTResearcher(query=query)
-# Conduct research on the given query
-research_result = await researcher.conduct_research()
-# Write the report
-report = await researcher.write_report()
-...
 ```
 
 **For more examples and configurations, please refer to the [PIP documentation](https://docs.gptr.dev/docs/gpt-researcher/gptr/pip-package) page.**
