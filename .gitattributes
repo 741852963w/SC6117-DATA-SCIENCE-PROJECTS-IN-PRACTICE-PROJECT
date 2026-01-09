@@ -1,3 +1,4 @@
 ﻿* text=auto
-*.mp4 binary\n*.mp4 -text
-*.mov binary\n*.mov -text
+*.mp4 -text
+*.mov -text
+
